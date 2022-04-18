@@ -5,39 +5,46 @@ import './index.css';
 function Square(props) {
   return (
     <button className="square" onClick={props.onClick}> 
-      { props.value }
+      {props.value}
     </button>
   );
 }
 
 class Board extends React.Component {
-  renderSquare(i) {
+  renderSquare(j) {
     return (
       <Square
-        value={this.props.squares[i]}
-        onClick={() => this.props.onClick(i)}
+        key={j}
+        value={this.props.squares[j]}
+        onClick={() => this.props.onClick(j)}
       />
     );
+  }
+
+  lineupSquare(i) {
+    const squares = []
+    for (let j = i * 3; j < (i * 3) + 3; j++) {
+        squares.push(this.renderSquare(j));
+    }
+    return squares;
+  }
+
+  lineupRows() {
+    const rowItems = []
+    for (let i = 0; i < 3; i++) {
+      rowItems.push(
+        <div key={i} className='board-row'>
+          {this.lineupSquare(i)}
+        </div>
+      );
+    }
+    return rowItems;
   }
 
   render() {
     return (
       <div>
-        <div className="board-row">
-          {this.renderSquare(0)}
-          {this.renderSquare(1)}
-          {this.renderSquare(2)}
-        </div>
-        <div className="board-row">
-          {this.renderSquare(3)}
-          {this.renderSquare(4)}
-          {this.renderSquare(5)}
-        </div>
-        <div className="board-row">
-          {this.renderSquare(6)}
-          {this.renderSquare(7)}
-          {this.renderSquare(8)}
-        </div>
+        {this.lineupRows()}
       </div>
     );
   }
