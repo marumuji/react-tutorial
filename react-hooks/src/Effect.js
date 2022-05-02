@@ -10,7 +10,7 @@ const EffectFunc = () => {
     document.title = `${count}回クリックされました`
     console.log(`再レンダーされました`)
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  },[])
+  },[count])
 
   /*
   componentDidMount(){
