@@ -6,7 +6,7 @@ import './index.css';
 // import Effect from './Effect';
 // import Counter from './UseReducerCounter';
 // import Counter2 from './UseReducerCounter2';
-import UseReducerAxios from './useReducerAxios';
+import UseReducerAxios from './UseReducerAxios';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

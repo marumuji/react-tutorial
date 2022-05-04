@@ -32,7 +32,7 @@ const dataFetchReducer = (dataState, action) => {
   }
 }
 
-const useReducerAxios = () => {
+const UseReducerAxios = () => {
   const [dataState, dispatch] = useReducer(dataFetchReducer, initialState)
 
   useEffect(() => {
@@ -53,4 +53,4 @@ const useReducerAxios = () => {
   )
 }
 
-export default useReducerAxios
+export default UseReducerAxios
