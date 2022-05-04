@@ -5,7 +5,8 @@ import './index.css';
 // import Counter from './Counter';
 // import Effect from './Effect';
 // import Counter from './UseReducerCounter';
-import Counter2 from './UseReducerCounter2';
+// import Counter2 from './UseReducerCounter2';
+import UseReducerAxios from './useReducerAxios';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -14,7 +15,8 @@ root.render(
     {/* <App/> */}
     {/* <Counter/> */}
     {/* <Effect/> */}
-    {<Counter2/>}
+    {/*<Counter2/> */}
+    {<UseReducerAxios/>}
   </React.StrictMode>
 );
 
