@@ -7,17 +7,19 @@ import './index.css';
 // import Counter from './UseReducerCounter';
 // import Counter2 from './UseReducerCounter2';
 // import UseReducerAxios from './UseReducerAxios';
-import Counter from './testVol1'
+// import Counter from './testVol1'
+import UseMemo from './UseMemoSample'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App/> */}
-    {<Counter/>}
+    {/* <Counter/> */}
     {/* <Effect/> */}
     {/*<Counter2/> */}
     {/*<UseReducerAxios/>*/}
+    {<UseMemo/>}
   </React.StrictMode>
 );
 
