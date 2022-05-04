@@ -6,17 +6,18 @@ import './index.css';
 // import Effect from './Effect';
 // import Counter from './UseReducerCounter';
 // import Counter2 from './UseReducerCounter2';
-import UseReducerAxios from './UseReducerAxios';
+// import UseReducerAxios from './UseReducerAxios';
+import Counter from './testVol1'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App/> */}
-    {/* <Counter/> */}
+    {<Counter/>}
     {/* <Effect/> */}
     {/*<Counter2/> */}
-    {<UseReducerAxios/>}
+    {/*<UseReducerAxios/>*/}
   </React.StrictMode>
 );
 
