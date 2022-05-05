@@ -8,7 +8,8 @@ import './index.css';
 // import Counter2 from './UseReducerCounter2';
 // import UseReducerAxios from './UseReducerAxios';
 // import Counter from './testVol1'
-import UseMemo from './UseMemoSample'
+// import UseMemo from './UseMemoSample'
+import UseRef from './UseRef';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -19,7 +20,8 @@ root.render(
     {/* <Effect/> */}
     {/*<Counter2/> */}
     {/*<UseReducerAxios/>*/}
-    {<UseMemo/>}
+    {/*<UseMemo/>}*/}
+    {<UseRef/>}
   </React.StrictMode>
 );
 
